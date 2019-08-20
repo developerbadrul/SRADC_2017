@@ -71,8 +71,8 @@ public class Register extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     progressBar.setVisibility(View.GONE);
                                     if (task.isSuccessful()) {
-                                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
                                         Toast.makeText(Register.this, "Registration Complete, Login Please", Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
                                     } else {
 
                                         Toast.makeText(Register.this, "Registration Faild, Retry", Toast.LENGTH_SHORT).show();
